@@ -1,9 +1,10 @@
+import NavBar from "./component/NavBar";
 import styles from "../../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <h3>asdf</h3>
+    <div className="container bg-gray-100">
+      <NavBar />
     </div>
   );
 }
