@@ -4,6 +4,15 @@ import { useState } from "react";
 import Image from "next/image";
 import BsLogo from "../assets/logoSemiWhite.png";
 import styles from "../../../styles/Home.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// for brand icons
+import {
+  faYoutube,
+  faFacebook,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -78,16 +87,47 @@ export default function NavBar() {
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className={styles.navBarText}>
-                  <Link href="/">Home</Link>
+                  <Link className="italic" href="/">
+                    Home
+                  </Link>
                 </li>
                 <li className={styles.navBarText}>
-                  <Link href="/blogs">Gallery</Link>
+                  <Link className="italic" href="/blogs">
+                    Gallery
+                  </Link>
                 </li>
                 <li className={styles.navBarText}>
-                  <Link href="/about">Mind Plan</Link>
+                  <Link className="italic" href="/about">
+                    Mind Plan
+                  </Link>
                 </li>
                 <li className={styles.navBarText}>
-                  <Link href="/contact">About US</Link>
+                  <Link className="italic" href="/contact">
+                    About US
+                  </Link>
+                </li>
+
+                <li className={styles.navBarText}>
+                  <Link href="https://twitter.com/_BasementSports?t=EiQC32SI3YwQ7BqIGqWcmA&s=31">
+                    <FontAwesomeIcon icon={faTwitter} color="gray" />
+                  </Link>
+                </li>
+
+                <li className={styles.navBarText}>
+                  <Link href="https://www.youtube.com/channel/UC-1Pco3PIWOawKrYLIM3inw">
+                    <FontAwesomeIcon icon={faYoutube} color="gray" />
+                  </Link>
+                </li>
+                <li className={styles.navBarText}>
+                  <Link href="https://www.facebook.com/basementsportsapp">
+                    <FontAwesomeIcon icon={faFacebook} color="gray" />
+                  </Link>
+                </li>
+
+                <li className={styles.navBarText}>
+                  <Link href="https://www.instagram.com/accounts/login/?next=%2F_basementsports%2F">
+                    <FontAwesomeIcon icon={faInstagram} color="gray" />
+                  </Link>
                 </li>
               </ul>
             </div>
