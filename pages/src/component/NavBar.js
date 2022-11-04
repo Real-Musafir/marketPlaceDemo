@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 import BsLogo from "../assets/logoSemiWhite.png";
+import styles from "../../../styles/Home.module.css";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -17,7 +18,7 @@ export default function NavBar() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className="w-full shadow">
+      <nav className="w-full">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -28,11 +29,12 @@ export default function NavBar() {
                   alt="Picture of the author"
                   width={40}
                   height={40}
+                  style={{ backgroundColor: "black", borderRadius: 3 }}
                 />
               </Link>
               <div className="md:hidden">
                 <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                  className="p-2 bg-gray-800 rounded-md outline-none focus:border-gray-400 focus:border"
                   onClick={() => setNavbar(!navbar)}
                 >
                   {navbar ? (
@@ -75,17 +77,17 @@ export default function NavBar() {
               }`}
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                <li className="text-white">
+                <li className={styles.navBarText}>
                   <Link href="/">Home</Link>
                 </li>
-                <li className="text-white">
-                  <Link href="/blogs">Blogs</Link>
+                <li className={styles.navBarText}>
+                  <Link href="/blogs">Gallery</Link>
                 </li>
-                <li className="text-white">
-                  <Link href="/about">About US</Link>
+                <li className={styles.navBarText}>
+                  <Link href="/about">Mind Plan</Link>
                 </li>
-                <li className="text-white">
-                  <Link href="/contact">Contact US</Link>
+                <li className={styles.navBarText}>
+                  <Link href="/contact">About US</Link>
                 </li>
               </ul>
             </div>
