@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div className="flex pt-10">
+      <div style={{ color: "black" }} className="flex pt-10">
         <h1 className="md:text-9xl sm:text-7xl text-6xl  hover:text-purple-300 font-black italic hover:not-italic">
           B
         </h1>
@@ -30,7 +30,7 @@ export default function Home() {
         </h1>
       </div>
 
-      <div className="flex absolute  right-0">
+      <div style={{ color: "black" }} className="flex absolute  right-0">
         <h1 className="md:text-9xl sm:text-7xl text-6xl  hover:text-purple-300 font-black italic hover:not-italic">
           S
         </h1>
