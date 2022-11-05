@@ -27,7 +27,7 @@ export default function NavBar() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className="w-full">
+      <nav style={{ backgroundColor: "#faf6e0" }} className="w-full">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -92,7 +92,7 @@ export default function NavBar() {
                   </Link>
                 </li>
                 <li className={styles.navBarText}>
-                  <Link className="italic" href="/blogs">
+                  <Link className="italic" href="/gallery">
                     Gallery
                   </Link>
                 </li>
