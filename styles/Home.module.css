@@ -3,6 +3,24 @@
   background-color: #faf6e0;
 }
 
+.laterDiv {
+  background-image: url("../pages/src/assets/greenSoccer.png");
+  background-repeat: no-repeat;
+  background-size: 50px, auto, contain;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  background-color: red;
+}
+
+.baseMentSportsLater {
+  margin: auto;
+  font-weight: 900;
+  color: black;
+  font-size: 100px;
+  font-family: "italic";
+}
+
 .navBarText {
   color: dimgray;
 }
