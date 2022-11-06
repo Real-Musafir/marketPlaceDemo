@@ -3,6 +3,21 @@
   background-color: #faf6e0;
 }
 
+.textHardCss {
+  overflow-y: scroll;
+}
+
+p.scroll {
+  overflow: scroll;
+}
+
+.mindPlanContainer {
+  min-height: 100vh;
+  background-color: #faf6e0;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
 .laterDiv {
   background-image: url("../pages/src/assets/greenSoccer.png");
   background-repeat: no-repeat;
@@ -11,6 +26,58 @@
   width: 100px;
   text-align: center;
   background-color: red;
+}
+
+.planCard1 {
+  background-color: hsla(218, 30%, 4%, 0.6);
+  height: 95%;
+  width: 95%;
+  border-width: 10px;
+  border-right: 0px;
+  border-top: 0px;
+  border-radius: 10px;
+  border-color: hsla(218, 30%, 20%, 0.3);
+  margin: auto;
+  overflow: hidden;
+}
+
+.planCard11 {
+  background-color: hsla(218, 30%, 4%, 0.6);
+  height: 95%;
+  width: 95%;
+  border-width: 10px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-radius: 10px;
+  border-color: hsla(218, 30%, 20%, 0.3);
+  margin: auto;
+  overflow: hidden;
+}
+
+.planCard2 {
+  background-color: hsla(218, 30%, 4%, 0.6);
+  height: 95%;
+  width: 95%;
+  border-width: 10px;
+  border-left: 0px;
+  border-top: 0px;
+  border-radius: 10px;
+  border-color: hsla(218, 30%, 20%, 0.3);
+  margin: auto;
+  overflow: hidden;
+}
+
+.planCard22 {
+  background-color: hsla(218, 30%, 4%, 0.6);
+  height: 95%;
+  width: 95%;
+  border-width: 10px;
+  border-left: 0px;
+  border-bottom: 0px;
+  border-radius: 10px;
+  border-color: hsla(218, 30%, 20%, 0.3);
+  margin: auto;
+  overflow: hidden;
 }
 
 .baseMentSportsLater {

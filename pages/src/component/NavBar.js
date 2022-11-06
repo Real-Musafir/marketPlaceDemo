@@ -97,13 +97,13 @@ export default function NavBar() {
                   </Link>
                 </li>
                 <li className={styles.navBarText}>
-                  <Link className="italic" href="/about">
+                  <Link className="italic" href="/mindPlan">
                     Mind Plan
                   </Link>
                 </li>
                 <li className={styles.navBarText}>
-                  <Link className="italic" href="/contact">
-                    About US
+                  <Link className="italic" href="/about">
+                    About Us
                   </Link>
                 </li>
 
