@@ -3,7 +3,7 @@ import styles from "../../styles/Home.module.css";
 
 export default function about() {
   return (
-    <div className={styles.container}>
+    <div style={{ color: "black" }} className={styles.container}>
       <div className="p-5">
         <h1 className="text-2xl italic font-black">
           The Story of Basement Sports
