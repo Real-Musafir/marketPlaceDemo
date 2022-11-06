@@ -19,7 +19,7 @@ function index() {
           <div className=" absolute w-1/2 h-full left-0">
             <div className="h-1/2 ">
               <div className={styles.planCard11}>
-                <div className="p-3 overflow-auto opacity-50 text-slate-100 italic text-ellipsis ">
+                {/* <div className="p-3 overflow-auto opacity-50 text-slate-100 italic text-ellipsis ">
                   <p>
                     Basement Sports is going to drop 32,000 unique nfts for
                     Country & Player (1,000 for each of the World Cup qualifying
@@ -31,12 +31,12 @@ function index() {
                     will also get exclusive access to soccer content,
                     merchandise and VIP experiences that no other NFT offer!
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="h-1/2 ">
               <div className={styles.planCard1}>
-                <div className="p-3 opacity-50 text-slate-100 italic text-ellipsis overflow-auto">
+                {/* <div className="p-3 opacity-50 text-slate-100 italic text-ellipsis overflow-auto">
                   In May 2020, we brought this concept to the world,
                   implementing a phased roll-out that started with America’s
                   Pastime, Baseball. Soccer and Hockey were quick to follow, and
@@ -56,7 +56,7 @@ function index() {
                 <div className="pl-3 pt-3 text-xl">November 2021</div>
                 <div className="pl-3 opacity-50 text-slate-100 italic text-ellipsis overflow-auto">
                   the 2-in-1 Soccer/Hockey Starter Kit hits the market.
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -64,15 +64,15 @@ function index() {
           <div className="absolute w-1/2 h-full right-0">
             <div className="h-1/2 ">
               <div className={styles.planCard22}>
-                <div className="p-3 opacity-50 text-slate-100 italic text-ellipsis overflow-auto">
+                {/* <div className="p-3 opacity-50 text-slate-100 italic text-ellipsis overflow-auto">
                   This is a 40 year Vision, of a little kid, who is now a big
                   kid – and has finally put all of the pieces together to bring
                   to life for others what made his childhood magical.
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="h-1/2 ">
-              <div className={styles.planCard2}>asdf</div>
+              <div className={styles.planCard2}></div>
             </div>
           </div>
         </div>
