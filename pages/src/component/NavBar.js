@@ -5,6 +5,7 @@ import Image from "next/image";
 import BsLogo from "../assets/logoSemiWhite.png";
 import styles from "../../../styles/Home.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useRouter } from "next/router";
 
 // for brand icons
 import {
@@ -16,6 +17,8 @@ import {
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
+  const { pathname } = useRouter();
+
   return (
     <div>
       <Head>
@@ -31,7 +34,7 @@ export default function NavBar() {
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
-              <Link href="#">
+              <Link href="/">
                 <Image
                   //   loader={myLoader}
                   src={BsLogo}
@@ -87,22 +90,42 @@ export default function NavBar() {
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className={styles.navBarText}>
-                  <Link className="italic" href="/">
+                  <Link
+                    className={`italic hover:text-gray-900 ${
+                      pathname === "/" ? "text-red-500" : null
+                    }`}
+                    href="/"
+                  >
                     Home
                   </Link>
                 </li>
                 <li className={styles.navBarText}>
-                  <Link className="italic" href="/gallery">
+                  <Link
+                    className={`italic hover:text-gray-900 ${
+                      pathname === "/gallery" ? "text-red-500" : null
+                    }`}
+                    href="/gallery"
+                  >
                     Gallery
                   </Link>
                 </li>
                 <li className={styles.navBarText}>
-                  <Link className="italic" href="/mindPlan">
+                  <Link
+                    className={`italic hover:text-gray-900 ${
+                      pathname === "/mindplan" ? "text-red-500" : null
+                    }`}
+                    href="/mindplan"
+                  >
                     Mind Plan
                   </Link>
                 </li>
                 <li className={styles.navBarText}>
-                  <Link className="italic" href="/about">
+                  <Link
+                    className={`italic hover:text-gray-900 ${
+                      pathname === "/about" ? "text-red-500" : null
+                    }`}
+                    href="/about"
+                  >
                     About Us
                   </Link>
                 </li>
